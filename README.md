@@ -1,0 +1,1 @@
+# version-control-conflict-navigation
