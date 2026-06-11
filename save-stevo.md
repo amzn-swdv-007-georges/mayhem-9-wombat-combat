@@ -5,5 +5,7 @@
 
 ## Solution - Help Stevo
 ```text
- < replace this section with your >
+1. Pretend to put fuel in the ute
+2. Quickly spill the fuel onto the chip so it malfunctions
+3. Eat meat pie with Stevo
 ```
