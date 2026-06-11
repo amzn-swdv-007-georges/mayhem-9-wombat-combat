@@ -5,6 +5,6 @@
 
 ## Solution - Help Stevo
 ```text
-Gaz call a tow truck to transport the ute
+Gaz uses and EMP to disable the AIII - so that stevo can drive back home
 Pop the 4 tyres so that the truck stops moving
 ```
