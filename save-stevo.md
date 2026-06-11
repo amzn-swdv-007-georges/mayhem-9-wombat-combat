@@ -5,5 +5,6 @@
 
 ## Solution - Help Stevo
 ```text
- Give the car a complimentary car wash to make the AI happy and release Stevo
+Gaz uses and EMP to disable the AIII - so that stevo can drive back home
+Pop the 4 tyres so that the truck stops moving
 ```
