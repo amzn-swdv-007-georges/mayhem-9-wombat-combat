@@ -5,5 +5,5 @@
 
 ## Solution - Help Stevo
 ```text
-Gaz uses and EMP to disable the AI - so that stevo can drive back home
+Pop the 4 tyres so that the truck stops moving
 ```
