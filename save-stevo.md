@@ -5,5 +5,5 @@
 
 ## Solution - Help Stevo
 ```text
-Gaz uses and EMP to disable the AIII - so that stevo can drive back home
+Gaz uses and EMP to disable the AI - so that stevo can drive back home
 ```
