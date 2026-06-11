@@ -5,5 +5,5 @@
 
 ## Solution - Help Stevo
 ```text
-Pop the 4 tyres so that the truck stops moving
+stevo stuck with an ai in his ute as it takes him to unfamiliar places 
 ```
