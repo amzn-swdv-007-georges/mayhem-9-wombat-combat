@@ -5,5 +5,5 @@
 
 ## Solution - Help Stevo
 ```text
- < replace this section with your >
+ Give the car a complimentary car wash to make the AI happy and release Stevo
 ```
