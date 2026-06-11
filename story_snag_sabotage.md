@@ -48,3 +48,4 @@ Write here to continue the mystery...
 ### We are looking for the charcater that took the recipe
 ### Dave lookin suspicious
 ### George added new line
+Old Mate Arthur, the sexy beast that he is, tries to wipe the stain. I saw it.
