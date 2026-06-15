@@ -50,4 +50,6 @@ Write here to continue the mystery...
 ### George added new line
 Old Mate Arthur, the sexy beast that he is, tries to wipe the stain. I saw it.
 ### The bin chicken looking real sus....
-### Dodgy" Dave looks suspious
+### Dodgy Dave looks suspious
+### Let's find the person responsible for this
+
