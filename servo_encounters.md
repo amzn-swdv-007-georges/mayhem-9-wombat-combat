@@ -32,4 +32,4 @@ Do not edit the story above. Instead, create your own **branch** (a "spin-off"),
 write your own wild ending below this line on your branch, and open a **Pull
 Request** so the Editor can review it.
 
-Add your ending here:
+Add your ending here: A new line has been added to this story..
