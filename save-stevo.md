@@ -5,6 +5,8 @@
 
 ## Solution - Help Stevo
 ```text
+Gaz uses and EMP to disable the AI - so that stevo can drive back home safely 
+```
 in the middle of the desert, stevo is surprised by the ute transforming into a transformer. The transformer is actually Optimus Prime. Optimus asks Stevo to wait as he signals for his autobot team. As the signal has been sent, Optimus transforms back into the ute and takes Stevo back onto the road again back to Sydney. 
  Gaz uses and EMP to disable the AIII - so that stevo can drive back home
 Gaz uses and EMP to disable the AI - so that stevo can drive back home
