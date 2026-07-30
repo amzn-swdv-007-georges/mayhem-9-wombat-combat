@@ -16,7 +16,7 @@ double-payment bug in ``process_canyon_chase_insurance()`` goes
 completely undetected.
 """
 
-from unittest.mock import MagicMock, Mock, patch
+from unittest.mock import patch
 
 import src.finance as finance
 
@@ -29,15 +29,12 @@ def test_canyon_chase_insurance_processed() -> None:
     must be wired to "Canyon Chase Unit A" under reference
     "CANYON-042" to cover engine-meltdown liability.
     """
-    mock_temp = Mock(return_value=101.5)
-    stub_payment = Mock(return_value=MagicMock())
-
     with (
-        patch("src.finance.get_engine_temperature", mock_temp),
-        patch("src.finance.wire_insurance_funds", stub_payment),
+        patch.object(finance, "get_engine_temperature", return_value=101.5),
+        patch.object(finance, "wire_insurance_funds") as mock_payment,
     ):
         temp = finance.get_engine_temperature()
         finance.process_canyon_chase_insurance()
 
-    mock_temp.assert_called_once()
     assert temp == 101.5
+    mock_payment.assert_called_once_with(100_000, "Canyon Chase Unit A", "CANYON-042")
