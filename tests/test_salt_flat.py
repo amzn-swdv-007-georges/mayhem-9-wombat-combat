@@ -41,7 +41,7 @@ def test_truck_launches_on_dry_surface() -> None:
 # after this test finishes, so no other test sees the 0.1 spill value.
 def test_oil_spill_makes_launch_unsafe() -> None:
     """Spilled oil reduces friction below the safe-launch threshold."""
-    TrackEnvironment.friction_coefficient = 0.1
+    TrackEnvironment.set_oil_slick()
     truck = MonsterTruck("Salt Rattler")
     assert truck.can_launch() is False
     result = truck.perform_launch()
