@@ -10,6 +10,8 @@ unreachable external service, so the tests will fail until the
 dependency is replaced.
 """
 
+from unittest.mock import patch
+
 from src.vehicles.helicopter import AttackHelicopter
 
 
@@ -17,7 +19,8 @@ def test_rotor_pitch_baseline_in_calm_wind() -> None:
     """In perfectly still air the rotor pitch should match the
     base angle of 8.0 degrees."""
     helicopter = AttackHelicopter("Crocodile-7")
-    pitch = helicopter.calculate_rotor_pitch()
+    with patch("src.vehicles.helicopter.get_live_wind_speed", return_value=0.0):
+        pitch = helicopter.calculate_rotor_pitch()
     assert pitch == 8.0
 
 
@@ -25,12 +28,14 @@ def test_rotor_pitch_increases_with_headwind() -> None:
     """A stronger headwind requires a steeper rotor pitch to
     maintain lift authority."""
     helicopter = AttackHelicopter("Crocodile-7")
-    pitch = helicopter.calculate_rotor_pitch()
+    with patch("src.vehicles.helicopter.get_live_wind_speed", return_value=28.0):
+        pitch = helicopter.calculate_rotor_pitch()
     assert pitch > 8.0
 
 
 def test_severe_crosswind_requires_aggressive_pitch() -> None:
     """In severe crosswind conditions the rotor must bite harder."""
     helicopter = AttackHelicopter("Crocodile-7")
-    pitch = helicopter.calculate_rotor_pitch()
+    with patch("src.vehicles.helicopter.get_live_wind_speed", return_value=28.0):
+        pitch = helicopter.calculate_rotor_pitch()
     assert pitch > 12.0
