@@ -10,8 +10,5 @@ def trigger_ramp_jump() -> str:
 
     Activates the on-board thruster and returns the result status.
     """
-    attempts = 0
-    while attempts < 28:
-        HardwareActuator.fire_thruster()
-        attempts += 1
+    HardwareActuator.fire_thruster()
     return "SUCCESS"

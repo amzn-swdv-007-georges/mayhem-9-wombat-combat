@@ -4,10 +4,9 @@ The attack-helicopter flight team relies on real-time wind-speed
 readings from the Australian Bureau of Meteorology (bom.gov.au)
 before they can calculate a safe rotor-pitch angle.
 
-These tests call the live :func:`~src.weather_api.get_live_wind_speed`
-function directly.  The production implementation simulates an
-unreachable external service, so the tests will fail until the
-dependency is replaced.
+These tests replace the live :func:`~src.weather_api.get_live_wind_speed`
+dependency with a stub that returns deterministic wind-speed values
+so the rotor-pitch calculation can be tested in isolation.
 """
 
 from unittest.mock import patch
