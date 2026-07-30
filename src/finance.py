@@ -45,7 +45,6 @@ def process_canyon_chase_insurance() -> None:
     lawnmowers racing through a narrow outback canyon at 140 km/h.
     """
     wire_insurance_funds(100_000, "Canyon Chase Unit A", "CANYON-042")
-    wire_insurance_funds(100_000, "Canyon Chase Unit A", "CANYON-042")
 
 
 def get_engine_temperature() -> float:
